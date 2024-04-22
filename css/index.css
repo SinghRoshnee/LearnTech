@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'bad script' cursive;
+    font-weight:50px;
+    text-decoration: none;
+}
+body
+{
+    
+    justify-content: center;
+    align-items: center; 
+    background: #232427;
+}
+
+.header{
+    height: 100vh;
+    background-position: 69%;
+    background-size: cover;
+    background-color: #050801;
+    background-image: url(d.png)
+}
+.text-box
+{
+    width: 90%;
+    color:black ;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 70px;
+    padding-bottom: 70px;
+}
+.text-box h1
+{
+    position: relative;
+    font-size: 4em;
+    letter-spacing: 10px;
+    color: #33626e;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    margin-bottom: 40px;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:  #33626e;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 80px #03bcf4,
+                    0 0 160px #03bcf4;
+    }
+}
+h2
+{
+    font-family: 'bad script' cursive;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.cony
+{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.button
+{
+    position: relative;
+    text-align: center;
+    width: 200px;
+    padding: 20px ;
+    margin-top: 120%;
+    font-size: 30px;
+    color: #15f4ee;
+    font-family: poppins;
+    font-weight:400;
+    border: 3px solid #15f4ee;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+}
+.button:hover
+{
+    box-shadow: 
+              0 5px 20px 0 #15f4ee inset,
+              0 5px 20px 0 #15f4ee,
+              0 5px 20px 0 #15f4ee inset,
+              0 5px 20px 0 #15f4ee;
+    text-shadow: 
+                0 0 5px  #15f4ee ,
+                0 0 5px  #15f4ee;
+                
+
+}
+@media(max-width: 900px) 
+{
+    
+.text-box h1
+{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.button
+{
+    left: 70px;
+
+}
+}

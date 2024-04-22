@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'bad script' cursive;
+}
+body{
+   
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+}
+body::before
+{
+    content: '';
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+.web-dev
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+b{
+    color: #3678f4;
+    font-size: 30px;
+}
+h1
+{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium';
+    color: red;
+}
+.wb{
+    color:antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:18px;
+    font-weight: 600;
+}
+.web-d{
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:18px;
+    font-weight: 600;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .card
+{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow:20px 20px 50px rgba(0,0,0,0.5) ;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+}
+.container .card .content
+{
+    padding: 20px;
+    text-align: center;
+}
+.container .card:hover .content
+{
+    transform: translateY(0px);
+    opacity: 1; 
+}
+.container .card .content h2
+{
+    position: absolute;
+    top:-80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255,255,255,0.05);
+    pointer-events: none;
+
+}
+.container .card .content h3
+{
+    font-size: 1.8em;
+    color:#000;
+    z-index: 1;
+}
+.container .card .content p
+{
+    font-size: 1em;
+    color:#fff;
+    font-weight: 300;
+    margin-top: 15px;
+
+}
+.container .card .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background:#000;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/*next*/
+.next  {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+.next:hover {
+background-color: #ddd;
+color: black;
+}
+.next {
+    background-color: grey;
+    color: white;
+  }
+  .next1
+  {
+    float: right;
+    margin-right: 100px;
+    
+  }
+  .next2
+  {
+    float: left;
+    margin-left: 100px;
+  }
+  
+  .round {
+    border-radius: 50%;
+    font-size: 50px;
+  }
+/*navbar*/
+  nav{
+    background-color: #000;
+    width: 100%;
+    height: 80px;
+}
+.company
+{
+    color: white;
+    font-size: 30px;
+    margin: 0 40px;
+    line-height: 80px;
+    font-weight: bold;
+    text-shadow:5px 5px 5px #03e9fa,
+                20px 0px 25px #03e9fa,
+                40px 0px 40px #03e9fa,
+                80px 75px 75px #03e9fa;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 80px;
+}
+nav ul li a
+{
+    color: #03e9fa;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    margin: 40px 0;
+    letter-spacing: 2px;
+    border-top: 1px solid #03e9fa;
+    border-radius: 15px;
+    font-weight: bold;
+}
+ul li a:hover
+{
+    background-color: #03e9fa;
+    color: white;
+    box-shadow: 0 0 5px #03e9fa,
+                0 0 25px #03e9fa,
+                0 0 50px #03e9fa,
+                0 0 100px #03e9fa;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.checkbtn
+{
+    color: white;
+    float: right;
+    font-size: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+    line-height: 80px;
+    display: none;
+}
+#check
+{
+    display: none;
+}
+@media (max-width:1250px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        flex: 1;
+    }
+
+    nav ul li a{
+        font-size: 70%;
+        margin: auto;
+    }
+
+    li {
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media(max-width:1050px)
+{
+    .checkbtn{
+        display: block;
+    }
+
+    nav {
+        display: block;
+    }
+
+
+     nav ul{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #222;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 10;
+        
+    }
+    nav ul li{
+        display: block;
+        line-height: 30px;
+        margin: 50px 0;
+      
+    }
+    nav ul li a{
+        color: white;
+        font-size:20px;
+        font-weight: bold;
+
+    }
+    ul li a:hover{
+        background-color: #03e9fa;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .text-box h1{
+        font-size: 40px;
+        margin-left: 20px;
+    }
+}
+/*------------footer ---------*/
+.footer
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: #ee9e9e;
+    font-size: 20px;
+   
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 50px;
+    color: #e91e63;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+    
+}
+
+

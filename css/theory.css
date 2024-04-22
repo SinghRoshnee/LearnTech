@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: black;
+    font-family: 'bad script' cursive;
+}
+.container{
+    width: 90%;
+    margin: 50px auto;
+}
+.heading h1{
+    text-align: center;
+    font-size: 4em;
+    margin-bottom:50px;
+    color: red;
+}
+.heading p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+.row{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    flex-basis: 23%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 10px 0px;
+    transition: .3s;
+}
+.card-header{
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+}
+.card-body{
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.card-body .btn{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+.card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(71, 70, 70, 0.35);
+}
+
+/*respmsive media queries*/
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    .card{
+        width: 40%;
+        margin: 40px;
+    }
+    .row{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:620px){
+    .container{
+        width: 100%;
+    }
+    .heading h1{
+        padding: 20px;
+        font-size: 30px;
+    }
+    .heading p{
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .card{
+        width: 80%;
+    }
+}
+
+/*------------footer ---------*/
+.footer
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: #ee9e9e;
+    font-size: 20px;
+   
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 50px;
+    color: #e91e63;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+    
+}
+/*next button*/
+.next  {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+.next:hover {
+background-color: #ddd;
+color: black;
+}
+.next {
+    background-color: grey;
+    color: white;
+  }
+  .next1
+  {
+    float: right;
+    margin-right: 100px;
+    
+  }
+  .next2
+  {
+    float: left;
+    margin-left: 100px;
+  }
+  
+  .round {
+    border-radius: 50%;
+    font-size: 50px;
+  }
+
+
